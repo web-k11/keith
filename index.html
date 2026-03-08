@@ -815,12 +815,12 @@ async function fetchSheetData(isSilent = false) {
       if (mainTitleElement) mainTitleElement.textContent = titleObject['大標題'] || '';
       const subtitleElement = document.querySelector('.subtitle');
       if (subtitleElement) subtitleElement.textContent = titleObject['副標題'] || '';
-      
+      }
 
     // 2. 處理內容資料 (自動覆蓋舊資料)
     if (data.sheet1Data) {
       processSheetData(data.sheet1Data);
-
+     }
       
 
     hideLoading();
@@ -1457,6 +1457,7 @@ function getLanguageClass(language) {
 </script>
 </body>
 </html>
+
 
 
 
